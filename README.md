@@ -13,7 +13,7 @@ all kinds of path planning algorithms to learn
 
 ​		可见，对优先级集合$Q$进行排序的方式影响了搜索的结果。对于Dijkstra算法而言，设置为已付代价函数$C$，或者称为已经过路径长度函数$C$，对于$Q$集中的各个状态点$x$有其对应的路径长度。图1.1 为Dijkstra算法的程序框图，初始时$C\left( x_{I} \right) = 0$，每次生成新状态点$x^{'}$后，计算$C\left( x^{'} \right) = C\left( x \right) + l\left( x,u \right)$。对于需要重新解算的重复状态点$x^{'}$，比较通过新加入状态点到该点的总路径长度和$Q$集中原有方案下到该点的路径长度值，取较小者插入$Q$集。
 
-![](D:\yaomin\github\path_planning\本科毕设\毕设\框图.png)
+![](D:\yaomin\github\path_planning\images\框图.png)
 
 <center>图1.1 Dijkstra算法流程图</center>
 
@@ -21,7 +21,7 @@ all kinds of path planning algorithms to learn
 
 ​		离散路径规划算法目标是生成一条从车辆起始配置点朝向全局期望路线方向的平滑路径，此算法生成了一系列以基准路径（局部期望路径）作不同横向偏移后的候选路径集。从图2.1可见，该算法主要分解成四个部分：基准路径的构建、基准路径跟随算法的设计、候选路径集的生成和路径选择。
 
-![](D:\yaomin\github\path_planning\本科毕设\毕设\离散路径规划.png)
+![](D:\yaomin\github\path_planning\images\离散路径规划.png)
 
 <center>图2.1 离散路径规划算法思路图</center>
 
@@ -38,7 +38,7 @@ all kinds of path planning algorithms to learn
  y_{\text{di}} = y_{\text{Bi}} + dcos\theta \\   
  \end{matrix} \right.\ $$ 
 
-![](D:\yaomin\github\path_planning\本科毕设\毕设\候选路径.png)
+![](D:\yaomin\github\path_planning\images\候选路径.png)
 
 <center>图2.2 候选路径集生成结果</center>
 
@@ -54,7 +54,7 @@ $$
 
 （1）碰撞风险分析。将被检测到有障碍物的路径记为有风险，用"1"表示，没有障碍物的路径记为无风险，用"0"表示。如图2.3(a)所示，其中灰色方框表示障碍物，黑色实线为部分候选路径集。图2.3(b)为碰撞风险分析结果。
 
-![](D:\yaomin\github\path_planning\本科毕设\毕设\碰撞风险.png)
+![](D:\yaomin\github\path_planning\images\碰撞风险.png)
 
 <center>(a)候选路径集示意 (b)碰撞风险分析结果</center>
 
@@ -65,9 +65,9 @@ $$
 r\left( L_{d} \right) = \left\{ \begin{matrix}                                           
  \text{collision}\left( L_{d} \right) = 1\ \ \ \ k_{i} \in \lbrack k_{2},k_{1}\rbrack \\    
  \text{collision}\left( L_{d} \right) = 0\ \ \ k_{i} \notin \lbrack k_{2},k_{1}\rbrack \\   
- \end{matrix} \right.\ 
+ \end{matrix} \right.\
 $$
- $$$$     ![](D:\yaomin\github\path_planning\本科毕设\毕设\碰撞风险2.png)
+ $$$$     ![](D:\yaomin\github\path_planning\images\碰撞风险2.png)
 
 <center>图2.4 碰撞风险示意图</center>
 
@@ -83,7 +83,7 @@ $$
 
 ​		与横向距离安全性成本不同的是，如图2.5所示，我们认为初始基准路径$L_{B}$附近一定范围内的路径$L_{d}$的一致性成本均较低，而当超过某一范围时，成本才急剧增加。图中路径0代表初始基准路径，虚线表示计算一致性成本的函数。这样能更好地优先选择靠近路径$L_{B}$一定区域内的路径，而不是用如图2.5所示的线性递减函数来使得路径选择时仅仅执着于初始基准路径，而忽略了其附近路径的同等可行性。
 
-![](D:\yaomin\github\path_planning\本科毕设\毕设\一致性成本.png)
+![](D:\yaomin\github\path_planning\images\一致性成本.png)
 
 <center>图2.5 一致性成本示意图</center>
 
