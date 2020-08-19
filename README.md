@@ -32,12 +32,10 @@ all kinds of path planning algorithms to learn
 ​		通过设计合理的路径跟随算法，车辆能平滑过渡到各基准路径上，从而生成候选路径集。结果如图2.2所示，图中红色虚线表示初始基准路径，与其平行的蓝色虚线为进行横向偏移后的基准路径集，带星点的黑色线条均从车辆位置引出，跟随到每条基准路径上，为生成的候选路径集。
 
 由点$P_{\text{Bi}}$到点$P_{\text{di}}$，横向偏移过程中保持切线倾角$\theta$不变，则有：
-
- $$\left\{ \begin{matrix}                        
- x_{\text{di}} = x_{\text{Bi}} - dsin\theta \\   
- y_{\text{di}} = y_{\text{Bi}} + dcos\theta \\   
- \end{matrix} \right.\ $$ 
-
+$$
+x_{\text{di}} = x_{\text{Bi}} - dsin\theta \\  
+y_{\text{di}} = y_{\text{Bi}} + dcos\theta \\
+$$
 ![](./images/候选路径.png)
 
 <center>图2.2 候选路径集生成结果</center>
