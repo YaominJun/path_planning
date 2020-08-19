@@ -33,9 +33,13 @@ all kinds of path planning algorithms to learn
 
 由点$P_{\text{Bi}}$到点$P_{\text{di}}$，横向偏移过程中保持切线倾角$\theta$不变，则有：
 $$
-x_{\text{di}} = x_{\text{Bi}} - dsin\theta \\  
+x_{\text{di}} = x_{\text{Bi}} - dsin\theta \\
+$$
+
+$$
 y_{\text{di}} = y_{\text{Bi}} + dcos\theta \\
 $$
+
 ![](./images/候选路径.png)
 
 <center>图2.2 候选路径集生成结果</center>
@@ -58,13 +62,10 @@ $$
 
 <center>图2.3 碰撞风险分析示意图</center>
 
-​		候选路径集的碰撞风险是根据路径上两点连线斜率大小来判定的。将图2.4的虚线框放大，如图2.5所示，图中点划线代表沿基准路径横向偏移距离$d$后的候选路径$L_{d}$，$L_{d}$由一系列点${p_{\text{di}}(x}_{\text{di}},y_{\text{di}})$组成，设候选路径$L_{d}$上不在障碍物$x$方向坐标范围内且距离障碍物左、右端最近的点分别为$p_{\text{di}}$、$p_{\text{dj}}$。以点$p_{\text{di}}$为原点，连接障碍物四顶点，作直线包络障碍物，如图中红色虚线所示，包络直线的最大、最小斜率分别为$k_{1}$、$k_{2}$。连接点$p_{\text{dj}}$和点$p_{\text{di}}$，如图中蓝色实线所示，其斜率为$k_{i}$。则候选路径$L_{d}$的碰撞风险分析结果可用下式表示：
-$$
-r\left( L_{d} \right) = \left\{ \begin{matrix}                                           
- \text{collision}\left( L_{d} \right) = 1\ \ \ \ k_{i} \in \lbrack k_{2},k_{1}\rbrack \\    
- \text{collision}\left( L_{d} \right) = 0\ \ \ k_{i} \notin \lbrack k_{2},k_{1}\rbrack \\   
- \end{matrix} \right.\
-$$
+​		候选路径集的碰撞风险是根据路径上两点连线斜率大小来判定的。将图2.4的虚线框放大，如图2.5所示，图中点划线代表沿基准路径横向偏移距离$d$后的候选路径$L_{d}$，$L_{d}$由一系列点${p_{\text{di}}(x}_{\text{di}},y_{\text{di}})$ 组成，设候选路径$L_{d}$上不在障碍物$x$方向坐标范围内且距离障碍物左、右端最近的点分别为$p_{\text{di}}$、$p_{\text{dj}}$。以点$p_{\text{di}}$为原点，连接障碍物四顶点，作直线包络障碍物，如图中红色虚线所示，包络直线的最大、最小斜率分别为$k_{1}$、$k_{2}$。连接点$p_{\text{dj}}$和点$p_{\text{di}}$，如图中蓝色实线所示，其斜率为$k_{i}$。则候选路径$L_{d}$的碰撞风险分析结果可用下式表示：
+
+![](./images/碰撞风险公式2.png)
+
 ​    ![](./images/碰撞风险2.png)
 
 <center>图2.4 碰撞风险示意图</center>
