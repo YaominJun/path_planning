@@ -39,7 +39,7 @@ More details can be seen in files.
 
 
 ## References
-[]()[[Steven_M._LaValle]_Planning_Algorithms2]()
+[]()[[Steven_M._LaValle]_Planning_Algorithms2](https://github.com/YaominJun/path_planning/blob/master/papers/%5BSteven_M._LaValle%5D_Planning_Algorithms2.pdf)
 
 []()[zhm-real/PathPlanning Python](https://github.com/YaominJun/PathPlanning.git)
 
