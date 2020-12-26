@@ -8,10 +8,22 @@
 状态空间是X，动作空间是U(x)。</br>
 初始状态X_I，目标状态X_G。</br>
 离散规划的统一表述形式：</br>
-![]()![](images/discrete_feasible_planning.jpg)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./images/discrete_feasible_planning.jpg"  width = "500" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 * 通用的前向搜索算法框架：</br>
-![]()![](images/general_forward_search.jpg)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./images/general_forward_search.jpg"  width = "500" align=center></a></td>
+    </tr>
+</table>
+</div>
 其中，Q是指优先级队列(搜索算法中的唯一显著区别就是对Q进行排序的特定函数)，xI是起点，XG是终点集合。</br>
 这只是总的框架，有很多小细节，比如1. 如何判断x ∈XG; 2. 如何输出plan结果，即动作action序列; 3. 如何判断x'已经访问过visited (比如邻接矩阵，邻接表等); 4.如何定义排序方式等。</br>
 
@@ -25,14 +37,26 @@
 6. 
 
 * 通用的后向搜索算法框架：</br>
-![]()![](images/general_backward_search.jpg)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./images/general_backward_search.jpg"  width = "500" align=center></a></td>
+    </tr>
+</table>
+</div>
 其中，Q是指优先级队列(搜索算法中的唯一显著区别就是对Q进行排序的特定函数)，xI是起点，XG是终点集合。</br>
 注意，动作序列为u^-1，说明需要不是当前点能到那些邻接点，而是哪些邻接点能够到达当前点。对应的状态转移方程f^-1，即向后搜索。
 
 <!-- * 典型的backward search  methods后向搜索算法:</br> -->
 
 * 通用的双向搜索算法框架：</br>
-![]()![](images/general_bidrectional_search.jpg)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./images/general_bidrectional_search.jpg"  width = "500" align=center></a></td>
+    </tr>
+</table>
+</div>
 其中，QI是指从起点出发的优先级队列(搜索算法中的唯一显著区别就是对Q进行排序的特定函数)，QG是指从终点出发的优先级队列，xI是起点，XG是终点集合。</br>
 
 <!-- * 典型的bidirectional search  methods双向搜索算法:</br> -->
@@ -43,7 +67,13 @@
   
   **BreadFirstSearch**文件夹里</br>
 * matlab实现结果：</br>
-![]()![](BreadFirstSearch/result.gif) </br>
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./BreadFirstSearch/result.gif"  width = "400" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 * 思路逻辑
 
@@ -55,7 +85,13 @@
 
 * 数据结构思路：</br>
 **先进先出(FIFO, First-In First-Out)** -> 优先级队列
-![]()![](BreadFirstSearch/pseudo_code.png)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./BreadFirstSearch/pseudo_code.png"  width = "400" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 ## depth first
 不可以用于求(每条路径权重为1的)最短路径，而只是用于搜索。
@@ -63,7 +99,13 @@
   
   **DepthFirstSearch**文件夹里</br>
 * matlab实现结果：</br>
-![]()![](DepthFirstSearch/result.gif)</br>
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./DepthFirstSearch/result.gif"  width = "400" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 * 思路逻辑
 
@@ -89,7 +131,13 @@
   **DijkstraAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-![]()![](DijkstraAlgorithm/result.gif)</br>
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./DijkstraAlgorithm/result.gif"  width = "400" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 * 思路逻辑
 
@@ -113,7 +161,13 @@
   **AStarAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-![]()![](AStarAlgorithm/result.gif)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./AStarAlgorithm/result.gif"  width = "400" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 * 思路逻辑
 
@@ -139,7 +193,13 @@
   **BestFirstAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-![]()![](BestFirstAlgorithm/result.gif)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./BestFirstAlgorithm/result.gif"  width = "400" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 * 思路逻辑
 
@@ -169,7 +229,13 @@
   **BidirectionalAStarAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-![]()![](BidirectionalAStarAlgorithm/result.gif)
+<div align=center>
+<table>
+  <tr>
+    <td><img src="./BidirectionalAStarAlgorithm/result.gif"  width = "400" align=center></a></td>
+    </tr>
+</table>
+</div>
 
 * 思路逻辑
 双向A*，在原本的forward A*基础上考虑了同时从起点和终点出发，直到两者相遇。

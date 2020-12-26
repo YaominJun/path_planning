@@ -22,21 +22,37 @@ Now it's coded in MATLAB, I'll implement them in C++ and ROS in the future.
 More details can be seen in files.
 
 ### BFS and DFS
-![]()![](Search_based_Planning/BreadFirstSearch/result.gif)
-![]()![](Search_based_Planning/DepthFirstSearch/result.gif)
+<div align=right>
+<table>
+  <tr>
+    <td><img src="./Search_based_Planning/BreadFirstSearch/result.gif"  width = "300" align=left/></a></td>
+    <td><img src="./Search_based_Planning/DepthFirstSearch/result.gif"  width = "300" align=right/></a></td>
+    </tr>
+</table>
+</div>
 
-### Dijkstra Algorithm
-![]()![](Search_based_Planning/DijkstraAlgorithm/result.gif)
+<!-- ![]()![](Search_based_Planning/BreadFirstSearch/result.gif)
+![]()![](Search_based_Planning/DepthFirstSearch/result.gif) -->
 
-### Best First Algorithm
-![]()![](Search_based_Planning/BestFirstAlgorithm/result.gif)
+### Dijkstra Algorithm and Best First Algorithm
+<div align=right>
+<table>
+  <tr>
+    <td><img src="./Search_based_Planning/DijkstraAlgorithm/result.gif"  width = "300" align=left></a></td>
+    <td><img src="./Search_based_Planning/BestFirstAlgorithm/result.gif"  width = "300" align=right/></a></td>
+    </tr>
+</table>
+</div>
 
-### A Star Algorithm
-![]()![](Search_based_Planning/AStarAlgorithm/result.gif)
-
-### Bidirectional A Star Algorithm
-![]()![](Search_based_Planning/BidirectionalAStarAlgorithm/result.gif)
-
+### A Star Algorithm and A Star Variants
+<div align=right>
+<table>
+  <tr>
+    <td><img src="./Search_based_Planning/AStarAlgorithm/result.gif"  width = "300" align=left></a></td>
+    <td><img src="./Search_based_Planning/BidirectionalAStarAlgorithm/result.gif"  width = "300" align=right/></a></td>
+    </tr>
+</table>
+</div>
 
 ## References
 []()[[Steven_M._LaValle]_Planning_Algorithms2](https://github.com/YaominJun/path_planning/blob/master/papers/%5BSteven_M._LaValle%5D_Planning_Algorithms2.pdf)
