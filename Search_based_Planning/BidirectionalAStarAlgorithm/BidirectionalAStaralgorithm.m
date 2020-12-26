@@ -87,7 +87,7 @@ end
 %绘制路径
 if flag_find
     %最终路径结果
-    result_path=plotPath(V_meet,CloseSet_fore,CloseSet_back,filename,true);    
+    result_path=plotPath(V_meet,CloseSet_fore,CloseSet_back,filename,false);    
 else
     fprintf('WARN: 终点是障碍物区域!!!没有找到路径!!! 失败!!!\n');
 end

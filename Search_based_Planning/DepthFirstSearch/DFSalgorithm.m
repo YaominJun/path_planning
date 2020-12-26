@@ -37,7 +37,7 @@ end
 
 %绘制路径
 if flag_find
-    [vertex,XY]=plotPath(xTarget,yTarget,S,filename,true);
+    [vertex,XY]=plotPath(xTarget,yTarget,S,filename,false);
     %最终路径结果
     result_path = zeros(2, length(vertex));
     for i = 1:length(vertex)
