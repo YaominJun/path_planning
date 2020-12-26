@@ -8,19 +8,19 @@
 状态空间是X，动作空间是U(x)。</br>
 初始状态X_I，目标状态X_G。</br>
 离散规划的统一表述形式：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./images/discrete_feasible_planning.jpg"  width = "500" align=center></a></td>
+    <td><img src="./images/discrete_feasible_planning.jpg"  width = "500" align=left></a></td>
     </tr>
 </table>
 </div>
 
 * 通用的前向搜索算法框架：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./images/general_forward_search.jpg"  width = "500" align=center></a></td>
+    <td><img src="./images/general_forward_search.jpg"  width = "500" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -37,10 +37,10 @@
 6. 
 
 * 通用的后向搜索算法框架：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./images/general_backward_search.jpg"  width = "500" align=center></a></td>
+    <td><img src="./images/general_backward_search.jpg"  width = "500" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -50,10 +50,10 @@
 <!-- * 典型的backward search  methods后向搜索算法:</br> -->
 
 * 通用的双向搜索算法框架：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./images/general_bidrectional_search.jpg"  width = "500" align=center></a></td>
+    <td><img src="./images/general_bidrectional_search.jpg"  width = "500" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -67,10 +67,10 @@
   
   **BreadFirstSearch**文件夹里</br>
 * matlab实现结果：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./BreadFirstSearch/result.gif"  width = "400" align=center></a></td>
+    <td><img src="./BreadFirstSearch/result.gif"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -85,10 +85,10 @@
 
 * 数据结构思路：</br>
 **先进先出(FIFO, First-In First-Out)** -> 优先级队列
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./BreadFirstSearch/pseudo_code.png"  width = "400" align=center></a></td>
+    <td><img src="./BreadFirstSearch/pseudo_code.png"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -99,10 +99,10 @@
   
   **DepthFirstSearch**文件夹里</br>
 * matlab实现结果：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./DepthFirstSearch/result.gif"  width = "400" align=center></a></td>
+    <td><img src="./DepthFirstSearch/result.gif"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -131,10 +131,10 @@
   **DijkstraAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./DijkstraAlgorithm/result.gif"  width = "400" align=center></a></td>
+    <td><img src="./DijkstraAlgorithm/result.gif"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -161,10 +161,10 @@
   **AStarAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./AStarAlgorithm/result.gif"  width = "400" align=center></a></td>
+    <td><img src="./AStarAlgorithm/result.gif"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -193,10 +193,10 @@
   **BestFirstAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./BestFirstAlgorithm/result.gif"  width = "400" align=center></a></td>
+    <td><img src="./BestFirstAlgorithm/result.gif"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -229,10 +229,10 @@
   **BidirectionalAStarAlgorithm**文件夹里</br>
 
 * matlab实现结果：</br>
-<div align=center>
+<div align=left>
 <table>
   <tr>
-    <td><img src="./BidirectionalAStarAlgorithm/result.gif"  width = "400" align=center></a></td>
+    <td><img src="./BidirectionalAStarAlgorithm/result.gif"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
