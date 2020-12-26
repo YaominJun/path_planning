@@ -25,8 +25,8 @@ More details can be seen in files.
 <div align=right>
 <table>
   <tr>
-    <td><img src="./Search_based_Planning/BreadFirstSearch/result.gif"  width = "300" align=left/></a></td>
-    <td><img src="./Search_based_Planning/DepthFirstSearch/result.gif"  width = "300" align=right/></a></td>
+    <td><img src="./Search_based_Planning/BreadFirstSearch/result.gif"  width = "500" align=left/></a></td>
+    <td><img src="./Search_based_Planning/DepthFirstSearch/result.gif"  width = "500" align=right/></a></td>
     </tr>
 </table>
 </div>
@@ -38,8 +38,8 @@ More details can be seen in files.
 <div align=right>
 <table>
   <tr>
-    <td><img src="./Search_based_Planning/DijkstraAlgorithm/result.gif"  width = "300" align=left></a></td>
-    <td><img src="./Search_based_Planning/BestFirstAlgorithm/result.gif"  width = "300" align=right/></a></td>
+    <td><img src="./Search_based_Planning/DijkstraAlgorithm/result.gif"  width = "500" align=left></a></td>
+    <td><img src="./Search_based_Planning/BestFirstAlgorithm/result.gif"  width = "500" align=right/></a></td>
     </tr>
 </table>
 </div>
@@ -48,8 +48,8 @@ More details can be seen in files.
 <div align=right>
 <table>
   <tr>
-    <td><img src="./Search_based_Planning/AStarAlgorithm/result.gif"  width = "300" align=left></a></td>
-    <td><img src="./Search_based_Planning/BidirectionalAStarAlgorithm/result.gif"  width = "300" align=right/></a></td>
+    <td><img src="./Search_based_Planning/AStarAlgorithm/result.gif"  width = "500" align=left></a></td>
+    <td><img src="./Search_based_Planning/BidirectionalAStarAlgorithm/result.gif"  width = "500" align=right/></a></td>
     </tr>
 </table>
 </div>
