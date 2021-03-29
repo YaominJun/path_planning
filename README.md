@@ -20,7 +20,18 @@ Now it's coded in MATLAB, I'll implement them in C++ and ROS in the future.
 
 ## Some Results
 More details can be seen in files.
+### C++ with ROS
+### A Star Algorithm 
+<div align=right>
+<table>
+  <tr>
+    <td><img src="./Search_based_Planning/images/results/a_star_result_2.png"  width = "500" align=left></a></td>
+    <td><img src="./Search_based_Planning/images/results/a_star_result2.png"  width = "500" align=right/></a></td>
+    </tr>
+</table>
+</div>
 
+### MATLAB
 ### BFS and DFS
 <div align=right>
 <table>

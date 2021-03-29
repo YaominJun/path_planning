@@ -42,9 +42,9 @@ add_library(${PROJECT_NAME}
         src/tools/tools.cpp
         src/ros_related/ros_related.cpp
         src/a_star/a_star.cpp
-        src/data_struct/date_struct.cpp
         src/config/planning_flags.cpp
-        include/path_optimizer/config/planning_flags.hpp
+        # include/a_star/config/planning_flags.hpp
+        src/data_struct/data_struct.cpp
 )
 target_link_libraries(${PROJECT_NAME} glog gflags ${catkin_LIBRARIES}
         )
@@ -56,7 +56,7 @@ target_link_libraries(${PROJECT_NAME}_demo
         )
 
 install(
-        TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_benchmark ${PROJECT_NAME}_demo
+        TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_demo
         EXPORT ${PROJECT_NAME}Export
         ARCHIVE DESTINATION lib
         LIBRARY DESTINATION lib

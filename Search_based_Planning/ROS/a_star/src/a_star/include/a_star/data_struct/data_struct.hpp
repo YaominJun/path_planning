@@ -5,7 +5,11 @@
 #ifndef DATA_STRUCT_HPP_
 #define DATA_STRUCT_HPP_
 
-namespace astar {
+#include <limits>
+#include <stdexcept>
+#include <unordered_set>
+
+namespace a_star {
 // Standard point struct.
 struct State {
     State() = default;
@@ -32,21 +36,46 @@ struct APoint {
     double y{};
     double g{};
     double h{};
-    // Layer denotes the index of the longitudinal layer that the point lies on.
-    bool is_in_open_set{false};
-    APoint *parent{nullptr};
-    inline double f() {
+    inline double f() const {
         return g + h;
     }
+    APoint *parent{nullptr};
+    APoint(double x, double y, double g, double h, APoint* parent)
+        : x(x), y(y), g(g), h(h), parent(parent) {}
+    APoint() = default;
+    APoint(const APoint& apoint) {
+        x = apoint.x;
+        y = apoint.y;
+        g = apoint.g;
+        h = apoint.h;
+        parent = apoint.parent;
+    }
+    bool operator<(const APoint& apoint) const {
+        return f() > apoint.f();
+    }
+    bool operator==(const APoint& apoint) const {
+        return (x == apoint.x) && (y == apoint.y);
+    }
+
+    // // Layer denotes the index of the longitudinal layer that the point lies on.
+    // bool is_in_open_set{false};
 };
 
-class PointComparator {
- public:
-    bool operator()(APoint *a, APoint *b) {
-        return a->f() > b->f();
+struct APointHash
+{
+	size_t operator()(const APoint& apoint)const {
+        //重载hash
+		return std::hash<double>()(apoint.x) ^ std::hash<double>()(apoint.y);
+	}
+};
+
+struct PointCmp
+{
+    bool operator()(const APoint* apoint_a, const APoint* apoint_b) const {
+        return apoint_a->f() > apoint_b->f();
     }
 };
 
-}  // namespace astar
+}  // namespace a_star
 
 #endif  // DATA_STRUCT_HPP_

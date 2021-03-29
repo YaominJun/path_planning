@@ -42,14 +42,14 @@ bool isEqual(const State* a, const APoint* b) {
     return dis < FLAGS_epsilon;
 }
 
-void transformState(const APoint* apoint, State& state) {
-    state.x = apoint->x;
-    state.y = apoint->y;
+void transformState(const APoint* apoint, State* state) {
+    state->x = apoint->x;
+    state->y = apoint->y;
 }
 
-void transformState(const State& state, APoint* apoint) {
-    apoint->x = state.x;
-    apoint->y = state.y;
+void transformState(const State* state, APoint* apoint) {
+    apoint->x = state->x;
+    apoint->y = state->y;
 }
 
 }  // namespace a_star

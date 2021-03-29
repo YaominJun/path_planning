@@ -9,23 +9,29 @@
 #include "a_star/tools/tools.hpp"
 #include "a_star/config/planning_flags.hpp"
 #include "glog/logging.h"
+#include "nav_msgs/OccupancyGrid.h"
+#include "grid_map_core/grid_map_core.hpp"
+#include "Eigen/Core"
 #include <vector>
+#include <queue>
 #include <string>
 #include <unordered_map>
+#include <unordered_set>
 #include <algorithm>
 #include <cmath>
 
-namespace astar {
+namespace a_star {
 
 class State;
-class CollisionChecker;
+class APoint;
+class SearchNode;
 
 class AStar {
  public:
     AStar() = delete;
     AStar(const State& start_state,
           const State& end_state,
-          const nav_msgs::OccupancyGrid::Ptr& map,
+          const grid_map::GridMap& map,
           const std::string& heuristic_type);
     ~AStar();
     AStar(const AStar& astar) = delete;
@@ -33,27 +39,30 @@ class AStar {
 
     bool searching(std::vector<State>* final_path);
 
+    const std::unordered_set<APoint, APointHash>* getClosedSet() {return &closed_set_;}
+
  private:
     inline double getStepCost(const APoint &parent, const APoint &point) const;
     inline double getG(const APoint& parent, const APoint& point) const;
     inline double getH(const APoint& p) const;
     inline bool checkExistenceInClosedSet(const APoint& point) const;
-    void updateNeighbor(const APoint& p);
+    inline bool checkExistenceInOpenSet(const APoint& point) const;
+    void updateNeighbor(const APoint* p, std::vector<APoint*>& sampled_points);
     bool isCollision(const Eigen::Vector2d &pos) const;
-    void extractPath(const APoint* goalpoint);
+    void extractPath(const APoint* goalpoint, std::vector<State>* final_path);
 
     const grid_map::GridMap& map_;
     double resolution_;
-    CollisionChecker* collision_checker_;
+   //  CollisionChecker* collision_checker_;  // TODO: robust collision checker
     std::string heuristic_type_;
-    std::vector<APoint> sampled_points_;
-    std:vector<vector<int>> motion_set_;
+    std::vector<APoint*> sampled_points_;
+    std::vector<std::vector<int>> motion_set_;
     State start_state_;
     State end_state_;
-    std::priority_queue<APoint*, std::vector<APoint*>, PointComparator> open_set_;
-    std::unordered_set<const APoint*> closed_set_;
-
+   //  std::priority_queue<APoint*, std::vector<APoint*>, PointComparator> open_set_pq;
+    std::unordered_set<APoint, APointHash> open_set_;
+    std::unordered_set<APoint, APointHash> closed_set_;
 };
-}  // namespace astar
+}  // namespace a_star
 
 #endif  // A_STAR_HPP_
