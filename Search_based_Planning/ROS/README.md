@@ -1,11 +1,12 @@
-# a_star
+# searched based path planning algorithm
 
 ## Result
+### A Star 
 最终路径（绿色路径）：</br>
 <div align=left>
 <table>
   <tr>
-    <td><img src="images/results/a_star_result_1.png"  width = "500" align=left></a></td>
+    <td><img src="images/results/a_star_result_1.png"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -14,7 +15,27 @@
 <div align=left>
 <table>
   <tr>
-    <td><img src="images/results/a_star_result.png"  width = "500" align=left></a></td>
+    <td><img src="images/results/a_star_result.png"  width = "400" align=left></a></td>
+    </tr>
+</table>
+</div>
+
+### Dijkstra
+显示过程中的closed_set集合（红色点）：</br>
+<div align=left>
+<table>
+  <tr>
+    <td><img src="images/results/dijkstra_result.png"  width = "400" align=left></a></td>
+    </tr>
+</table>
+</div>
+
+### best first search
+显示过程中的closed_set集合（红色点）：</br>
+<div align=left>
+<table>
+  <tr>
+    <td><img src="images/results/bfs_result.png"  width = "400" align=left></a></td>
     </tr>
 </table>
 </div>
@@ -23,7 +44,16 @@
 
     catkin build
     source devel/setup.bash
-    roslaunch a_star demo.launch
+
+then start the launch file:
+
+    roslaunch a_star demo_a_star.launch
+or,
+
+    roslaunch a_star demo_dijkstra.launch
+or,
+
+    roslaunch a_star demo_best_first_search.launch
 
 在rviz中选择起点`2D Pose Estimate`和终点`2D Nav Goal`：</br>
 <div align=left>
@@ -147,13 +177,25 @@ https://github.com/ANYbotics/grid_map
             std::priority_queue<APoint*, std::vector<APoint*>, PointCmp> open_set_pq;
 
 * 典型的forward search methods前向搜索算法：</br>
-
 1. Breadth first广度优先搜索【不包含路径权重】
 2. Depth first深度优先搜索【不包含路径权重】
 3. Dijkstra’s algorithm【包含路径权重】
 4. A-star【包含路径权重】
 5. Best first【包含路径权重】
 6. 
+由于框架类似，因此，Dijkstra和best first search算法直接继承于A Star算法，只是修改相应的`getG`和`getH`函数，因为三者的区别只是考虑的代价值不同：
+1. Dijkstra’s algorithm
+
+        V.Q = g_cost;
+
+2. A star
+
+        V.Q = g_cost+h_cost;
+
+3. Best first
+
+        V.Q = h_cost;
+更多详细内容可以参考关于搜索算法的总的README文件。
 
 ## More Knowledge
 1. unordered_set
@@ -230,3 +272,19 @@ https://blog.csdn.net/aggie4628/article/details/104147211
 因此，注意三点：（1）priority_queue需要包含的是APoint指针；（2）`std::vector<APoint*> sampled_points_;`包含的是APoint指针；（3）`updateNeighbor`时需要新建APoint：`APoint* nextnode = new APoint();`。
 
 同时，还需要注意：对不确定的数据结构操作方法或算法等，可以先用简单的案例测试，测试过程中了解情况了后，再对复杂的算法进行处理。
+
+4.有关继承的内容</br>
+因为这里的Dijkstra算法、A Star算法、best first search算法的结构类似，只是代价值不同，因此在写了A Star算法之后，Dijkstra算法和best first search算法可以直接继承于A Star算法，然后在此基础上进行简单的修改即可。</br>
+注意的细节：</br>
+（1）即使派生类public继承于基类，也不能访问基类的private成员，因此需要将基类的并且之后还用于派生类的成员变量或成员函数设置为protected。</br>
+
+（2）要让派生类能修改基类的函数，需要将其设置为虚函数，在基类的该成员函数前加入virtual关键字；并且在派生类的该重写的函数后面添加override，以在编译时方便及时地判断派生类是否真的重写了该函数。</br>
+如果在基类的该函数前没有添加virtual，但是在派生类的该函数后添加了override，会提示错误：</br>
+
+    XXX marked override, but does not override。
+因此能及时检查出错误。</br>
+
+（3）一般都要设置虚析构函数，否则派生类不会被析构。</br>
+
+其他注意事项：</br>
+平常在复制.hpp或.h文件时，不能只是修改文件里的内容，对应的宏定义 #ifndef XXX_HPP_系列也需要进行更改，否则只会编译复制后的文件，而复制前的文件不会编译了，因为被前者的宏定义覆盖了。</br>

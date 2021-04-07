@@ -1,0 +1,21 @@
+Log file created at: 2021/03/30 16:46:07
+Running on machine: luyaomin-Vostro-5490
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0330 16:46:07.676113 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:08.343044 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:09.009454 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:09.676478 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:10.343850 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:10.642417 11091 a_star.cpp:41] searching started.
+I0330 16:46:11.012756 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:11.309078 11091 a_star.cpp:41] searching started.
+I0330 16:46:11.684676 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:11.975733 11091 a_star.cpp:41] searching started.
+I0330 16:46:12.354282 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:12.642356 11091 a_star.cpp:41] searching started.
+I0330 16:46:13.011309 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:13.309139 11091 a_star.cpp:41] searching started.
+I0330 16:46:13.685053 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:13.975805 11091 a_star.cpp:41] searching started.
+I0330 16:46:14.362537 11091 demo_a_star.cpp:104] map published.
+I0330 16:46:14.642323 11091 a_star.cpp:41] searching started.

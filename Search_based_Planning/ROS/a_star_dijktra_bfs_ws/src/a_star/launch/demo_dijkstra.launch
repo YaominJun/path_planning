@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="a_star" type="dijkstra_demo" name="dijkstra_demo" args="--log_dir=." output="screen">
+        <rosparam command="load" file="$(find a_star)/config/params.yaml"/>
+    </node>
+    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find a_star)/config/rviz_dijkstra.rviz" output="screen" />
+</launch>

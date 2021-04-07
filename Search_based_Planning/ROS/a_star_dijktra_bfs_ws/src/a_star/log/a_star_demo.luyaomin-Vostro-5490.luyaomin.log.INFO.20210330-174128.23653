@@ -1,0 +1,18 @@
+Log file created at: 2021/03/30 17:41:28
+Running on machine: luyaomin-Vostro-5490
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0330 17:41:28.222721 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:28.889539 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:29.557442 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:30.223009 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:30.890874 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:31.558696 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:32.223645 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:32.890786 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:33.557147 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:34.225240 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:34.890339 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:35.322304 23653 a_star.cpp:41] searching started.
+I0330 17:41:35.557965 23653 demo_a_star.cpp:104] map published.
+I0330 17:41:35.989048 23653 a_star.cpp:41] searching started.
+I0330 17:41:36.224117 23653 demo_a_star.cpp:104] map published.

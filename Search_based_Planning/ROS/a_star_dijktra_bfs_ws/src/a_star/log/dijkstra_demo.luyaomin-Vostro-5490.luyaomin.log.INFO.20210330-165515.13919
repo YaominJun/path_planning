@@ -1,0 +1,17 @@
+Log file created at: 2021/03/30 16:55:15
+Running on machine: luyaomin-Vostro-5490
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0330 16:55:15.460176 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:16.128482 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:16.795066 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:17.461968 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:18.128466 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:18.793982 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:19.462016 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:20.128347 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:20.794098 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:21.461424 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:22.128482 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:22.795148 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:23.461786 13919 demo_dijkstra.cpp:105] map published.
+I0330 16:55:24.128422 13919 demo_dijkstra.cpp:105] map published.

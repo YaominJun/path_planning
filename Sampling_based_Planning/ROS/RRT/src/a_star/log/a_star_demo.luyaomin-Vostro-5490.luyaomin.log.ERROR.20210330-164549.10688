@@ -1,0 +1,42 @@
+Log file created at: 2021/03/30 16:45:49
+Running on machine: luyaomin-Vostro-5490
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0330 16:45:49.232843 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.265990 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.299343 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.332715 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.366125 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.399390 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.432710 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.466012 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.499541 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.532783 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.566056 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.599398 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.632674 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.666018 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.699337 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.732717 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.766000 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.799346 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.832671 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.866005 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.899374 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.932729 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:49.965960 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.003558 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.032629 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.066124 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.099467 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.132730 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.166060 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.199388 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.232746 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.266049 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.299297 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.332638 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.366046 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.399454 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.432706 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.466017 10688 a_star.cpp:75] A Star failed!
+E0330 16:45:50.499354 10688 a_star.cpp:75] A Star failed!

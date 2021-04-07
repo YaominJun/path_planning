@@ -1,0 +1,34 @@
+Log file created at: 2021/03/30 17:35:38
+Running on machine: luyaomin-Vostro-5490
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0330 17:35:38.212198 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:38.878872 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:39.545536 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:40.213615 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:40.880545 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:41.378504 21906 a_star.cpp:41] searching started.
+I0330 17:35:41.546165 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:42.045071 21906 a_star.cpp:41] searching started.
+I0330 17:35:42.215394 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:42.711776 21906 a_star.cpp:41] searching started.
+I0330 17:35:42.881691 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:43.378507 21906 a_star.cpp:41] searching started.
+I0330 17:35:43.547960 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:44.045197 21906 a_star.cpp:41] searching started.
+I0330 17:35:44.213932 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:44.711778 21906 a_star.cpp:41] searching started.
+I0330 17:35:44.880506 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:45.378468 21906 a_star.cpp:41] searching started.
+I0330 17:35:45.550626 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:46.045118 21906 a_star.cpp:41] searching started.
+I0330 17:35:46.213950 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:46.711889 21906 a_star.cpp:41] searching started.
+I0330 17:35:46.893780 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:47.378471 21906 a_star.cpp:41] searching started.
+I0330 17:35:47.554319 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:48.045075 21906 a_star.cpp:41] searching started.
+I0330 17:35:48.216343 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:48.711714 21906 a_star.cpp:41] searching started.
+I0330 17:35:48.886754 21906 demo_a_star.cpp:104] map published.
+I0330 17:35:49.378652 21906 a_star.cpp:41] searching started.
+I0330 17:35:49.557026 21906 demo_a_star.cpp:104] map published.

@@ -1,0 +1,32 @@
+Log file created at: 2021/03/30 16:52:15
+Running on machine: luyaomin-Vostro-5490
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0330 16:52:15.442884 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:16.111222 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:16.776255 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:17.444510 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:18.111794 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:18.776995 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:19.443806 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:20.111248 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:20.778555 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:21.444581 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:22.110055 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:22.777870 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:23.444587 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:24.111173 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:24.777770 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:25.444563 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:26.110716 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:26.777884 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:27.444545 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:28.111763 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:28.778023 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:29.444653 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:30.110432 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:30.777971 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:31.444555 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:32.113723 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:32.777189 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:33.444572 13411 demo_dijkstra.cpp:105] map published.
+I0330 16:52:34.111228 13411 demo_dijkstra.cpp:105] map published.

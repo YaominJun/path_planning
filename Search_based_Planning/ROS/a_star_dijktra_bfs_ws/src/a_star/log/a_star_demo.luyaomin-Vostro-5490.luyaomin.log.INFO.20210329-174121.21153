@@ -1,0 +1,76 @@
+Log file created at: 2021/03/29 17:41:21
+Running on machine: luyaomin-Vostro-5490
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0329 17:41:21.348500 21153 demo.cpp:99] map published.
+I0329 17:41:22.015676 21153 demo.cpp:99] map published.
+I0329 17:41:22.681852 21153 demo.cpp:99] map published.
+I0329 17:41:23.349923 21153 demo.cpp:99] map published.
+I0329 17:41:24.016127 21153 demo.cpp:99] map published.
+I0329 17:41:24.683326 21153 demo.cpp:99] map published.
+I0329 17:41:24.948213 21153 a_star.cpp:41] searching started.
+I0329 17:41:25.355665 21153 demo.cpp:99] map published.
+I0329 17:41:25.614953 21153 a_star.cpp:41] searching started.
+I0329 17:41:26.026849 21153 demo.cpp:99] map published.
+I0329 17:41:26.281499 21153 a_star.cpp:41] searching started.
+I0329 17:41:26.694986 21153 demo.cpp:99] map published.
+E0329 17:41:26.874859 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:26.903477 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:26.938709 21153 a_star.cpp:74] A Star failed!
+I0329 17:41:26.948128 21153 a_star.cpp:41] searching started.
+E0329 17:41:26.970957 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.003526 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.037827 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.070436 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.103559 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.137454 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.169886 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.203208 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.236306 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.269718 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.303403 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.336236 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.369774 21153 a_star.cpp:74] A Star failed!
+I0329 17:41:27.370891 21153 demo.cpp:99] map published.
+E0329 17:41:27.403455 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.437480 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.469475 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.502635 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.535751 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.569232 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.602495 21153 a_star.cpp:74] A Star failed!
+I0329 17:41:27.614663 21153 a_star.cpp:41] searching started.
+E0329 17:41:27.635730 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.669417 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.703609 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.737342 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.770421 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.803475 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.837105 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.870182 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.903488 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.937769 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:27.970775 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:28.004042 21153 a_star.cpp:74] A Star failed!
+E0329 17:41:28.037302 21153 a_star.cpp:74] A Star failed!
+I0329 17:41:28.038837 21153 demo.cpp:99] map published.
+I0329 17:41:28.281567 21153 a_star.cpp:41] searching started.
+I0329 17:41:28.691648 21153 demo.cpp:99] map published.
+I0329 17:41:28.948243 21153 a_star.cpp:41] searching started.
+I0329 17:41:29.359266 21153 demo.cpp:99] map published.
+I0329 17:41:29.615240 21153 a_star.cpp:41] searching started.
+I0329 17:41:30.029114 21153 demo.cpp:99] map published.
+I0329 17:41:30.281560 21153 a_star.cpp:41] searching started.
+I0329 17:41:30.694766 21153 demo.cpp:99] map published.
+I0329 17:41:30.949220 21153 a_star.cpp:41] searching started.
+I0329 17:41:31.362840 21153 demo.cpp:99] map published.
+I0329 17:41:31.614836 21153 a_star.cpp:41] searching started.
+I0329 17:41:32.039788 21153 demo.cpp:99] map published.
+I0329 17:41:32.281524 21153 a_star.cpp:41] searching started.
+I0329 17:41:32.694157 21153 demo.cpp:99] map published.
+I0329 17:41:32.948336 21153 a_star.cpp:41] searching started.
+I0329 17:41:33.363477 21153 demo.cpp:99] map published.
+I0329 17:41:33.614969 21153 a_star.cpp:41] searching started.
+I0329 17:41:34.029914 21153 demo.cpp:99] map published.
+I0329 17:41:34.281605 21153 a_star.cpp:41] searching started.
+I0329 17:41:34.700078 21153 demo.cpp:99] map published.
+I0329 17:41:34.948199 21153 a_star.cpp:41] searching started.
