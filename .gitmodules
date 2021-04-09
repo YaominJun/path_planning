@@ -1,0 +1,3 @@
+[submodule "Search_based_Planning/ROS/a_star_dijktra_bfs_ws/src/ros_viz_tools"]
+	path = Search_based_Planning/ROS/a_star_dijktra_bfs_ws/src/ros_viz_tools
+	url = https://github.com/Magic-wei/ros_viz_tools
